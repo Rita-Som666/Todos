@@ -1,5 +1,5 @@
 package ru.netology.domain;
-import java.util.Objects;
+
 public class Todos {
 
     private Task[] tasks = new Task[0];
@@ -14,10 +14,6 @@ public class Todos {
     }
 
     private Task[] result;
-
-    public Task[] getResult(){
-        return result;
-    }
 
 
     public void add(Task task) {
@@ -37,8 +33,6 @@ public class Todos {
         }
         return result;
     }
-
-
 
 
 }

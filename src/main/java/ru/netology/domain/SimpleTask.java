@@ -1,5 +1,5 @@
 package ru.netology.domain;
-import java.util.Objects;
+
 public class SimpleTask extends Task {
     protected String title;
 
@@ -8,13 +8,10 @@ public class SimpleTask extends Task {
         this.title = title;
     }
 
-    public String getTitle() {
-        return title;
-    }
 
     @Override
-    public boolean matches(String query){
-        if (title.contains(query)){
+    public boolean matches(String query) {
+        if (title.contains(query)) {
             return true;
         }
         return false;
