@@ -34,7 +34,7 @@ public class TodosTest {
     public void shouldSearchSimpleTask(){
         todos.search("Позвонить родителям");
         Task[] expected = {simpleTask};
-        Task[] actual = todos.findAll();
+        Task[] actual = todos.getResult();
         Assertions.assertArrayEquals(expected, actual);
     }
 }
